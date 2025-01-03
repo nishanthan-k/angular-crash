@@ -16,6 +16,10 @@ export class TaskService {
     return this.http.get<Task[]>(this.apiUrl);
   }
 
+  addTask(task: Task) {
+    return this.http.post<Task>(this.apiUrl, task);
+  }
+
   deleteTask(task: Task) {
     const url = `${this.apiUrl}/${task.id}`;
     return this.http.delete<Task>(url);

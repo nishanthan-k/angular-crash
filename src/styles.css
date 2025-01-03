@@ -60,6 +60,15 @@ body {
   font-size: 17px;
 }
 
+.error {
+  border: 2px solid red;
+  outline: none;
+}
+
+.errorLabel {
+  color: red;
+}
+
 .form-control-check {
   display: flex;
   align-items: center;
